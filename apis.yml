@@ -1,7 +1,16 @@
 aid: contextai
 name: Context.ai *
-description: 'Context.ai * is a company surfaced as a portfolio company of gv and added to the API Evangelist
-  network as a stub for enrichment. Sector: ai. This profile is a lead awaiting the enrichment pipeline.'
+description: 'Context (context.ai) is a unified enterprise AI platform for building,
+  deploying, and improving AI agents at scale. The product is organized into modular
+  components: a Workspace for authoring agent workflows in plain English, an Engine
+  with 800+ connectors and IdP-brokered identity, Unify as a knowledge/institutional-context
+  repository, and Evals for rubric-based quality scoring. It is model-agnostic (Claude,
+  GPT, Gemini, Kimi, or open weights) and offers hosted, VPC, on-prem, or air-gapped
+  deployment. The company originated as a GV (Google Ventures) and Theory Ventures
+  backed product-analytics-for-LLMs startup and now operates as an enterprise agent
+  platform used by teams including Qualcomm, Stripe, and Palantir. This repo carries
+  no public developer/API surface: the provider publishes no OpenAPI, SDKs, MCP server,
+  or developer documentation, so most machine-readable artifacts are not applicable.'
 url: https://raw.githubusercontent.com/api-evangelist/contextai/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,12 +18,30 @@ x-backed-by:
 - gv
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
+image: https://context.ai/img/og-default.png
 tags:
 - Company
 - Ai
+- AI Agents
+- Enterprise AI
+- Agent Platform
+- LLM
+- Automation
+- Evaluation
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,4 +50,23 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: https://context.ai
+  url: https://www.context.ai
+- type: Blog
+  url: https://www.context.ai/blog
+- type: SignUp
+  url: https://workspace.context.ai
+- type: Support
+  url: https://www.context.ai/contact
+- type: TermsOfService
+  url: https://www.context.ai/terms
+- type: PrivacyPolicy
+  url: https://www.context.ai/privacy-policy
+- type: DomainSecurity
+  url: security/contextai-domain-security.yml
+- type: LLMsTxt
+  url: llms/contextai-llms.txt
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
